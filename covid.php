@@ -1,4 +1,4 @@
->((>>>>))<?php $coviduz=file_get_contents( "https://coronavirus.uz/uz"); $arr_uz=explode(
+<?php $coviduz=file_get_contents( "https://coronavirus.uz/uz"); $arr_uz=explode(
 "<section class=\"res section-counter\ ">", $coviduz); $arr_uz=explode( "\n", $arr_uz[1]); $ret_text=""
 ; foreach ($arr_uz as $key=> $value) { if(strrpos($value,"
 <p class=\ "hstat\">")!==false){ $value=str_replace("
